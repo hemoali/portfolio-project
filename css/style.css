@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 960px;
+}
+
+
+/*HEADER*/
+
+header {
+    overflow: auto;
+    border-bottom: 3px solid #7d97ad;
+    padding-bottom: 20px;
+    position: relative;
+    min-height: 120px;
+    width: 100%;
+}
+
+.header__logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.header__person-info__title,
+.header__person-info__subtitle {
+    float: right;
+    text-transform: uppercase;
+    max-width: calc(100% - 120px);
+}
+
+.header__person-info__title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: 200;
+    float: right;
+    font-size: 24px;
+}
+
+.header__person-info__subtitle {
+    font-weight: 400;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+/*COVER SECTION*/
+
+.cover-section {
+    width: 100%;
+}
+
+.cover-section__image {
+    margin: 20px auto;
+    width: 100%;
+}
+
+
+/*FEATURED-WORK SECTION*/
+
+.featured-work-section__title {
+    font-size: 25px;
+    color: #7d97ad;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.container,
+.row {
+    width: 100%;
+}

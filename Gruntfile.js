@@ -12,19 +12,33 @@ module.exports = function (grunt) {
         responsive_images: {
             dev: {
                 options: {
+                    separator: "",
                     engine: 'im',
-                    sizes: [{
-                        width: 1600,
-                        suffix: '_large_2x',
-                        quality: 30
-          }]
+                    sizes: [
+                        {
+                            name: "_large_x1",
+                            width: '50%'
+}, {
+                            name: "_medium_x2",
+                            width: '70%'
+}, {
+                            name: "_medium_x1",
+                            width: '37.50%'
+}, {
+                            name: "_small_x2",
+                            width: '25%'
+}, {
+                            name: "_small_x1",
+                            width: '12.50%'
+}]
                 },
                 files: [{
                     expand: true,
-                    src: ['*.{gif,jpg,png}'],
-                    cwd: 'images_src/',
-                    dest: 'images_new/'
+                    src: ['{htmlcode,sea,phones,taxi}.{gif,jpg,png}'],
+                    cwd: 'img/',
+                    dest: 'img_new/'
         }]
+
             }
         },
 

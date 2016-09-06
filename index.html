@@ -3,11 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Ibrahim Radwan</title>
+    <!--Normalize css for all browsers-->
+    <!-- TODO: uncomment next link-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">-->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    Hi
+    <header>
+        <img class="header__logo" srcset="img/Ibrahim-1x.png 1x, img/Ibrahim-2x.png 2x" src="img/Ibrahim-1x.png" alt="Ibrahim Radwan personal photo, face, glasses, France football team shrit, sky, smile">
+        <div class="header__person-info">
+            <h1 class="header__person-info__title">Ibrahim Radwan</h1>
+            <h2 class="header__person-info__subtitle">Front-end Developer</h2>
+        </div>
+    </header>
+
+    <section id="cover" class="cover-section">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="img/htmlcode_large_1x.jpg 1x, img/htmlcode_large_2x.jpg 2x">
+            <source media="(min-width: 500px)" srcset="img/htmlcode_medium_1x.jpg 1x, img/htmlcode_medium_2x.jpg 2x">
+            <img srcset="img/htmlcode_small_1x 1x, img/htmlcode_small_2x 2x" src="img/htmlcode_small_1x.jpg" alt="HTML code">
+        </picture>
+    </section>
+
+    <section id="featured-work" class="featured-work-section">
+        <h3 class="featured-work-section__title">Featured Work</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="" alt="" class="col-4__img">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="col-4">
+                    <img src="" alt="" class="col-4__img">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="col-4">
+                    <img src="" alt="" class="col-4__img">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scripts-->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
