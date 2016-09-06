@@ -16,19 +16,19 @@ module.exports = function (grunt) {
                     engine: 'im',
                     sizes: [
                         {
-                            name: "_large_x1",
+                            name: "_large_1x",
                             width: '50%'
 }, {
-                            name: "_medium_x2",
+                            name: "_medium_2x",
                             width: '70%'
 }, {
-                            name: "_medium_x1",
+                            name: "_medium_1x",
                             width: '37.50%'
 }, {
-                            name: "_small_x2",
+                            name: "_small_2x",
                             width: '25%'
 }, {
-                            name: "_small_x1",
+                            name: "_small_1x",
                             width: '12.50%'
 }]
                 },
