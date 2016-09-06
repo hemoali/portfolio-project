@@ -33,10 +33,13 @@ header {
 }
 
 .header__person-info__title,
-.header__person-info__subtitle {
+.header__person-info__job {
 	float: right;
 	text-transform: uppercase;
 	max-width: calc(100% - 120px);
+		transition: 0.3s;
+		text-align: right;
+		text-align: end;
 }
 
 .header__person-info__title {
@@ -46,7 +49,7 @@ header {
 	font-size: 24px;
 }
 
-.header__person-info__subtitle {
+.header__person-info__job {
 	font-weight: 400;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 13px;
@@ -62,12 +65,17 @@ header {
 	width: 100%;
 }
 
-.cover-section__image {
+.cover-section__img {
 	margin: 20px auto;
 	width: 100%;
 	box-shadow: 0px 0px 5px #888;
 }
 
+.cover-section__title{
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+}
 
 /*FEATURED-WORK SECTION*/
 
@@ -117,6 +125,17 @@ header {
 
 
 /*Responisveness*/
+
+@media screen and (max-width: 599px) {
+	.header__person-info__title{
+		font-size: 20px;
+		transition: 0.3s;
+	}
+	.header__person-info__job{
+		font-size: 11px;
+		transition: 0.3s;
+	}
+}
 
 @media screen and (min-width: 599px) {
 	.col-4 {
